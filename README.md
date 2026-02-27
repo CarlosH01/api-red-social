@@ -5,6 +5,7 @@ La API maneja relaciones entre usuarios y publicaciones, aplicando buenas práct
 
 Para lanzar el servidor: npm start
 
+Users
 Ruta registro de usuarios, los datos se deben de enviar por body, con los campos: name, surname, nick, email, password
 http://localhost:3900/api/user/register
 
@@ -33,6 +34,25 @@ http://localhost:3900/api/follow/following{/:id}{/:page}
 Para ver las personas que me siguen se necesita el token, mi id y el  numero de pagina
 http://localhost:3900/api/follow/followers{/:id}{/:page}
 
-publication
+Publication
+Para guardar una publicacion solo se necesita el token y el campo "text" en body
+http://localhost:3900/api/publication/save
+
+Para ver todas las publicaciones de un usuario se necesita el token y el id del usuario
+http://localhost:3900/api/publication/user/id
+
+Para ver todas mis publicaiones solo se necesita el token y numero de pagina
+http://localhost:3900/api/publication/feed/1
+
+Para ver una publicacion en especifico, se necesita el token y el id de la publicacion
+http://localhost:3900/api/publication/detail/id
+
+Para subir una foto a una publicacion se necesita el token(el token debe de ser de la persona que subio la publicaion) y el id de la publicacion a editar
+http://localhost:3900/api/publication/upload/
+
+Para busccar una imagen de una publicacion se necesita el token y el nombre del archivo
+http://localhost:3900/api/publication/media/:file
+
+
 
 
