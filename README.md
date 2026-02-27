@@ -1,4 +1,4 @@
-Desarrollo de una API REST para una red social construida con Node.js, Express y MomgoDb.
+Desarrollo de una API REST para una red social construida con Node.js, Express y MongoDb.
 El sistema permite el registro y autenticación de usuarios, gestión de perfiles, seguimiento entre usuarios (seguir y dejar de seguir), así como la creación, edición y eliminación de publicaciones.
 
 La API maneja relaciones entre usuarios y publicaciones, aplicando buenas prácticas en estructura de rutas, controladores y middlewares para la gestión de autenticación y autorización.
