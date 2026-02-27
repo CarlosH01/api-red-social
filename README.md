@@ -1,4 +1,4 @@
-Desarrollo de una API REST para una red social construida con Node.js y Express.
+Desarrollo de una API REST para una red social construida con Node.js, Express y MomgoDb.
 El sistema permite el registro y autenticación de usuarios, gestión de perfiles, seguimiento entre usuarios (seguir y dejar de seguir), así como la creación, edición y eliminación de publicaciones.
 
 La API maneja relaciones entre usuarios y publicaciones, aplicando buenas prácticas en estructura de rutas, controladores y middlewares para la gestión de autenticación y autorización.
@@ -32,4 +32,7 @@ http://localhost:3900/api/follow/following{/:id}{/:page}
 
 Para ver las personas que me siguen se necesita el token, mi id y el  numero de pagina
 http://localhost:3900/api/follow/followers{/:id}{/:page}
+
+publication
+
 
